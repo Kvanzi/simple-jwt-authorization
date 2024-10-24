@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: "JwtAuthorization"
+  config:
+    import: "optional:file:.env[.properties]"
+  datasource:
+    url: ${DATASOURCE_URL}
+    username: ${DATASOURCE_USERNAME}
+    password: ${DATASOURCE_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+jwt:
+  secret-key: ${JWT_SECRET}
+  refresh-expiration: 604_800_000 # 7 days in milliseconds
+  access-expiration: 900_000 # 15 minutes in milliseconds
