@@ -68,7 +68,7 @@ Returns user info.
 
 2. Navigate to the project directory:
     ```bash
-    cd task-manager-api
+    cd simple-jwt-authorization
     ```
 
 3. Build and run the application:
